@@ -1,0 +1,22 @@
+.switch-theme {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: $main-transition;
+  cursor: pointer;
+  background: url('../assets/images/themes/light-theme.svg') center / contain no-repeat;
+  &:hover {
+    filter: invert(79%) sepia(35%) saturate(305%) hue-rotate(7deg) brightness(195%) contrast(83%);
+  }
+  @include media-bigger-mobile-L {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.switch-theme_light {
+  background: url('../assets/images/themes/dark-theme.svg') center / contain no-repeat;
+    &:hover {
+    filter: invert(30%) sepia(35%) saturate(305%) hue-rotate(7deg) brightness(195%) contrast(83%);
+  }
+}

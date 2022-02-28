@@ -1,0 +1,40 @@
+.social-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  width: 188px;
+  justify-content: space-between;
+  @include media-tablet {
+    padding: 0;
+    margin: 8px 0 0 12px;
+  }
+
+  .social-icons__item {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    transition: $main-transition;
+    cursor: pointer;
+
+
+    &:hover {
+      filter: invert(79%) sepia(35%) saturate(305%) hue-rotate(7deg) brightness(195%) contrast(83%);
+    }
+
+    &:nth-of-type(1) {
+      background-image: url('../assets/images/social-icons/instagram.svg');
+    }
+
+    &:nth-of-type(2) {
+      background-image: url('../assets/images/social-icons/fb.svg');
+    }
+
+    &:nth-of-type(3) {
+      background-image: url('../assets/images/social-icons/twitter.svg');
+    }
+
+    &:nth-of-type(4) {
+      background-image: url('../assets/images/social-icons/pinterest.svg');
+    }
+  }
+}

@@ -1,0 +1,66 @@
+main .hero {
+  margin: calc(250px - $header-height) 20px 23% 80px;
+  @include media-tablet {
+    margin: 10% 34% 20% 7.8%;
+  }
+  @include media-big-phone {
+    margin: 0% 34% 20% 7.8%;
+  }
+  @include media-mobile-L {
+    margin: -3% 10% 0% 7.8%;
+  }
+}
+
+.hero {
+  max-width: 500px;
+  text-align: left;
+
+  .hero__title {
+    font: bold 3.75rem/200% $heading-font;
+    @include media-tablet {
+      font: normal 2rem/200% $heading-font;
+      margin-bottom: 20px !important;
+    }
+    @include media-bigger-mobile-L {
+      font: normal 1.75rem/150% $heading-font;
+      margin-bottom: 0px !important;
+    }
+    @include media-mobile-M {
+      font: normal 1.25rem/100% $heading-font;
+    }
+  }
+
+  .hero__subtitle {
+    font: 1.25rem/200% $text-font;
+    margin: 10px 30px 25px 0;
+    @include media-tablet {
+      font: 1.25rem/1.5rem $text-font;
+      margin-bottom: 60px;
+    }
+    @include media-big-phone {
+      margin: 0 0 20px 0 !important;
+      font: 1rem/1.25rem $text-font;
+    }
+    @include media-mobile-M {
+      margin-top: 10px !important;
+      font: 0.6rem/1rem $text-font;
+    }
+  }
+
+  .hero__button {
+    @include media-bigger-mobile-L {
+      margin: 0 0 20px 0 !important;
+      font: 1rem/1.25rem $text-font;
+    }
+    @include media-mobile-M {
+      width: 140px;
+      height: 35px;
+      &:before {
+        width: 140px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+

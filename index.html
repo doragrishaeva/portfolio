@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="scss/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo header__logo"></div>
+    <nav class="navigation header__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#skills" class="navigation__link" data-i18n="skills">Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#portfolio" class="navigation__link" data-i18n="portfolio">Portfolio</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#video" class="navigation__link" data-i18n="video">Video</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#price" class="navigation__link" data-i18n="price">Price</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link" data-i18n="contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="switch-language header__switch-language">
+      <span class="switch-language__item" data-language="en">en</span>
+      <span class="switch-language__slash">/</span>
+      <span class="switch-language__item" data-language="ru">ru</span>
+    </div>
+    <div class="switch-theme header__switch-theme"></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-menu-icon hamburger-menu__icon">
+        <span class="hamburger-menu-icon__line"></span>
+        <span class="hamburger-menu-icon__line"></span>
+        <span class="hamburger-menu-icon__line"></span>
+      </div>
+      <nav class="navigation hamburger__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#skills" class="navigation__link" data-i18n="skills">Skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#portfolio" class="navigation__link" data-i18n="portfolio">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#video" class="navigation__link" data-i18n="video">Video</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#price" class="navigation__link" data-i18n="price">Price</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link" data-i18n="contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero__title" data-i18n="hero-title">Alexa Rise</h1>
+      <div class="hero__subtitle" data-i18n="hero-text">
+        Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+      </div>
+      <button class="btn hero__button btn_active" data-i18n="hire">Hire me</button>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title" data-i18n="skills">Skills</h2>
+      <div class="skills-cards">
+        <div class="skills-card skills-cards__card">
+          <img class="skills-card__img" src="./assets/images/skills/camera.svg" alt="camera"/>
+          <h4 class="skills-card__title" data-i18n="skill-title-1">Digital photography</h4>
+          <div class="skills-card__subtitle" data-i18n="skill-text-1">
+            High-quality photos in the studio and on the nature
+          </div>
+        </div>
+        <div class="skills-card skills-cards__card">
+          <img class="skills-card__img" src="./assets/images/skills/video.svg" alt="video" />
+          <h4 class="skills-card__title" data-i18n="skill-title-2">Video shooting</h4>
+          <div class="skills-card__subtitle" data-i18n="skill-text-2">
+            Capture your moments so that they always stay with you
+          </div>
+        </div>
+        <div class="skills-card skills-cards__card">
+          <img class="skills-card__img" src="./assets/images/skills/rotouch.svg" alt="rotouch" />
+          <h4 class="skills-card__title" data-i18n="skill-title-3">Retouch</h4>
+          <div class="skills-card__subtitle" data-i18n="skill-text-3">
+            I strive to make photography surpass reality
+          </div>
+        </div>
+        <div class="skills-card skills-cards__card">
+          <img class="skills-card__img" src="./assets/images/skills/audio.svg" alt="audio" />
+          <h4 class="skills-card__title" data-i18n="skill-title-4">Audio</h4>
+          <div class="skills-card__subtitle" data-i18n="skill-text-4">
+            Professional sounds recording for video, advertising, portfolio
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2 class="section-title" data-i18n="portfolio">Portfolio</h2>
+      <div class="filters portfolio__filters">
+        <button class="btn filters__item btn_inactive" data-season="winter" data-i18n="winter">Winter</button>
+        <button class="btn filters__item btn_inactive" data-season="spring" data-i18n="spring">Spring</button>
+        <button class="btn filters__item btn_inactive" data-season="summer" data-i18n="summer">Summer</button>
+        <button class="btn filters__item btn_active" data-season="autumn" data-i18n="autumn">Autumn</button>
+      </div>
+      <div class="gallery portfolio__items">
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img1"/>
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img2" />
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img3" />
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img4" />
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img5" />
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__img" src="" alt="img6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="video">
+      <h2 class="section-title" data-i18n="video">Video</h2>
+      <div class="video-player video__player">
+          <img class="video-player__image" src="assets/images/video-player.jpg" alt="video"/>
+          <button class="video-player__button">
+            <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M58.521 0.13572C58.0219 0.256183 55.5699 0.686409 53.0729 1.09112C6.17415 8.69809 -16.0083 65.9044 13.0263 104.367C22.0681 116.344 42.8323 129.906 43.8607 124.506C43.9895 123.832 42.7534 122.978 39.6854 121.624C27.0991 116.065 15.7097 105.112 9.49548 92.5938C-13.0744 47.1276 25.5402 -4.32319 75.965 4.02852C83.5399 5.28359 84.8555 2.66782 77.4319 1.11129C74.053 0.402757 60.344 -0.303999 58.521 0.136315V0.13572ZM58.8236 13.5427C49.9562 14.8494 38.5455 19.3896 38.5455 21.6114C38.5455 23.3352 39.8261 23.2017 44.5063 20.9901C70.1424 8.8779 101.354 22.1306 110.64 49.0716C126.075 93.8524 75.1194 131.76 36.427 104.279C14.9264 89.009 9.96843 58.679 25.4031 36.8396C29.4989 31.0443 27.3436 28.5941 23.1612 34.2915C-2.60779 69.3966 24.2964 118.982 67.7711 116.507C111.658 114.008 132.641 61.4206 102.441 29.6195C91.3694 17.9613 73.5089 11.378 58.8242 13.5415L58.8236 13.5427ZM111.588 21.4488C110.688 22.349 111.376 23.9601 114.257 27.704C135.62 55.4579 128.626 96.9429 99.2939 116.46C86.0768 125.255 74.472 127.692 52.7708 126.233C50.7271 126.096 50.3491 126.252 50.3491 127.237C50.3491 131.711 76.324 130.498 89.2029 125.422C126.968 110.539 141.858 62.4946 119.094 28.9739C114.774 22.6137 112.602 20.4352 111.588 21.4494L111.588 21.4488ZM47.2645 44.1107C46.191 45.2963 46.099 46.6867 45.9347 64.2031C45.6647 92.9997 42.7985 92.1292 77.569 73.8111C94.5145 64.8831 94.6095 65.1632 70.3056 52.4143C51.3039 42.4467 49.3949 41.7584 47.2645 44.1107ZM68.2637 55.0052C86.726 64.6481 86.8221 64.7081 85.5308 65.7798C84.0829 66.982 51.1615 84 50.285 84C49.5812 84 49.4412 80.8353 49.4412 64.9324C49.4412 51.5574 49.6388 45.8642 50.1022 45.8642C50.4654 45.8642 58.6385 49.9778 68.2643 55.0052H68.2637Z"
+                fill="white" />
+            </svg>
+          </button>
+      </div>
+    </section>
+
+    <section id="price" class="price">
+      <h2 class="section-title" data-i18n="price">Price</h2>
+      <div class="price-cards price__cards">
+        <div class="price-card price-cards__card">
+          <h3 class="price-card__title">Standard</h3>
+          <div class="price-card__price">500 $</div>
+          <div class="price-card__text">
+            <div class="price-card__text-item" data-i18n="price-description-1-span-1">One location</div>
+            <div class="price-card__text-item" data-i18n="price-description-1-span-2">120 photos in color</div>
+            <div class="price-card__text-item" data-i18n="price-description-1-span-3">12 photos in retouch</div>
+            <div class="price-card__text-item" data-i18n="price-description-1-span-4">Readiness 2-3 weeks</div>
+            <div class="price-card__text-item" data-i18n="price-description-1-span-5">Make up, visage</div>
+          </div>
+          <button class="btn price-card__button btn_active" data-i18n="order">Order shooting</button>
+        </div>
+        <div class="price-card price-cards__card">
+          <h3 class="price-card__title">Premium</h3>
+          <div class="price-card__price">700 $</div>
+          <div class="price-card__text">
+            <div class="price-card__text-item" data-i18n="price-description-2-span-1">One or two locations</div>
+            <div class="price-card__text-item" data-i18n="price-description-2-span-2">200 photos in color</div>
+            <div class="price-card__text-item" data-i18n="price-description-2-span-3">20 photos in retouch</div>
+            <div class="price-card__text-item" data-i18n="price-description-2-span-4">Readiness 1-2 weeks</div>
+            <div class="price-card__text-item" data-i18n="price-description-2-span-5">Make up, visage</div>
+          </div>
+          <button class="btn price-card__button btn_active" data-i18n="order">Order shooting</button>
+        </div>
+        <div class="price-card price-cards__card">
+          <h3 class="price-card__title">Gold</h3>
+          <div class="price-card__price">1000 $</div>
+          <div class="price-card__text">
+            <div class="price-card__text-item" data-i18n="price-description-3-span-1">Three locations or more</div>
+            <div class="price-card__text-item" data-i18n="price-description-3-span-2">300 photos in color</div>
+            <div class="price-card__text-item" data-i18n="price-description-3-span-3">50 photos in retouch</div>
+            <div class="price-card__text-item" data-i18n="price-description-3-span-4">Readiness 1 week</div>
+            <div class="price-card__text-item" data-i18n="price-description-3-span-5">Make up, visage, hairstyle</div>
+          </div>
+          <button class="btn price-card__button btn_active" data-i18n="order">Order shooting</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <h2 class="contacts__title" data-i18n="contact-me">Contact me</h2>
+      <div class="form contacts__form">
+        <input class="form__input" type="email" placeholder="E-mail"/>
+        <input class="form__input" type="tel" placeholder="Phone" />
+        <textarea class="form__input" placeholder="Message"></textarea>
+        <button class="btn form__button btn_active" data-i18n="send-message">Send message</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="copyright footer__copyright">
+      <div class="copyright__sign">©</div>
+      <div class="copyright__year">2022</div>
+      <div class="copyright__github">
+        <a href="https://github.com/doragrishaeva" class="copyright__github-link" target="_blank">github</a>
+      </div>
+    </div>
+    <div class="footer__text">
+      <a href="https://rs.school/js-stage0/" class="footer__text-link" target="_blank">Rolling Scopes School</a>
+    </div>
+    <ul class="social-icons footer__social-icons">
+      <li class="social-icons__item">
+        <a class="social-icons__link" href=""></a>
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href=""></a>
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href=""></a>
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href=""></a>
+      </li>
+    </ul>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .form__input {
+    border: 2px solid $main-color;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    font: 20px/200% $text-font;
+    color: $main-color;
+    padding: 3px 18px;
+    outline: none;
+    resize: none;
+    @include media-bigger-mobile-L {
+      max-height: 25px;
+      max-width: 80%;
+      margin: 0 auto 10px;
+    }
+  }
+
+  >textarea {
+    padding-bottom: 13px !important;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $main-color;
+  }
+
+  .form__button {
+    margin-top: 10px;
+    @include media-tablet {
+      margin: 10px auto 0;
+    }
+    @include media-bigger-mobile-L {
+      width: 170px;
+      height: 50px;
+      &:before {
+        width: 170px;
+        height: 50px;
+      }
+    }
+  }
+}

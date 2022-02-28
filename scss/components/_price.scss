@@ -1,0 +1,40 @@
+.price-card {
+  border: 3px solid $main-color;
+  flex-basis: 32%;
+  @include media-tablet {
+    align-self: center;
+    min-width: 420px;
+    box-sizing: border-box;
+  }
+  @include media-bigger-mobile-L {
+    min-width: 100%;
+  }
+
+  .price-card__title {
+    font: bold 1.75rem/200% $heading-font;
+    margin: 40px 0 20px;
+  }
+
+  .price-card__price {
+    font: bold 1.5rem/200% $heading-font;
+    color: $main-color;
+    margin-bottom: 20px;
+  }
+
+  .price-card__text {
+    margin: 0 43px 40px;
+    @include media-tablet {
+      margin: 0 20px 40px !important;
+    }
+  }
+
+  .price-card__text-item {
+    font: 18px/200% $text-font;
+    text-align: center;
+  }
+
+  .price-card__button {
+    margin-bottom: 40px;
+    border-left: 2px solid $main-color;
+  }
+}

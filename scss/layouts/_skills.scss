@@ -1,0 +1,45 @@
+.skills {
+  margin: 0 20px;
+  .section-title {
+    &:before, &:after {
+      width: 274px;
+      margin: 0 20px;
+    }
+    @include media-bigger-laptop {
+      margin-top: 14%;
+    }
+    @include media-laptop {
+      margin-top: 23%;
+      &:before, &:after {
+        width: 200px;
+      }
+    }
+    @include media-tablet {
+      margin: 100px auto 65px !important;
+      font: bold 32px/40px $heading-font;
+      &:before, &:after {
+        width: 117px;
+      }
+    }
+    @include media-bigger-mobile-L {
+      &:before, &:after {
+        width: 80px;
+      }
+    }
+    @include media-mobile-M {
+      font: bold 28px/40px "Merriweather", serif;
+      &:before, &:after {
+        width: 55px;
+      }
+    }
+  }
+
+  .skills-cards {
+    display: flex;
+    @include media-tablet {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

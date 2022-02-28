@@ -1,0 +1,23 @@
+.navigation__list {
+  display: flex;
+  list-style: none;
+  padding: 0 36px;
+  margin: 0;
+  margin-right: -0.5px; //for pixel perfect
+
+  .navigation__item {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+
+  .navigation__link {
+    font: 1.25rem/250% $text-font;
+    color: $text-color;
+    transition: $main-transition;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  overflow-x: hidden;
+  @include media-tablet {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .hamburger-menu-icon {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+
+    @include media-bigger-mobile-L {
+      width: 35px;
+    }
+  }
+
+  .hamburger-menu__icon_opened {
+    :first-of-type {
+      transform: rotate(-45deg) translate(-9px, 6px);
+      @include media-bigger-mobile-L {
+        transform: rotate(-45deg) translate(-8px, 6px);
+      }
+    }
+    :nth-of-type(2) {
+      opacity: 0;
+    }
+    :last-of-type {
+      transform: rotate(45deg) translate(-8px, -9px);
+    }
+  }
+
+  .hamburger-menu-icon__line {
+    width: 50px;
+    height: 3.5px;
+    display: block;
+    border-bottom: 3.5px solid $text-color;
+    margin: 5.5px 0;
+    transition: all 0.3s ease-in-out;
+    @include media-bigger-mobile-L {
+      margin: 3.5px 0;
+      width: 35px;
+    }
+  }
+
+  .hamburger__navigation {
+    position: absolute;
+    right: -470px;
+    top: 0;
+    transition: $main-transition;
+    width: 0;
+    overflow: hidden;
+    background-color: $bg-color;
+    z-index: 10;
+    box-sizing: border-box;
+        padding: 134px 0 0 85px;
+    height: 100vh;
+    padding-left: 0;
+
+
+    .navigation__list {
+      flex-direction: column;
+    }
+
+    .navigation__item {
+      &:not(:last-of-type) {
+        margin-bottom: 19px;
+      }
+    }
+
+    .navigation__link {
+      font: 35px/200% $text-font;
+      color: $text-color;
+      transition: $main-transition;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  .hamburger__navigation_opened {
+    display: block;
+    right: -1px;
+    transition: $main-transition;
+    position: absolute;
+    width: 81%;
+    padding: 134px 343px 0 92px;
+    top: 0;
+    @include media-big-phone {
+      width: 100vw;
+    }
+    @include media-mobile-M {
+      padding: 134px 275px 0 92px;
+    }
+
+
+    .navigation__list {
+      flex-direction: column;
+    }
+  }
+}

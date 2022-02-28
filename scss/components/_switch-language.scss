@@ -1,0 +1,27 @@
+.switch-language {
+  font: bold 1.25rem/250% $text-font;
+  display: flex;
+  @include media-tablet {
+    margin-left: auto;
+    letter-spacing: 0.03rem;
+  }
+}
+
+.switch-language__item_active {
+  color: $main-color;
+}
+
+.switch-language__slash {
+  margin: 0 9px;
+}
+
+.switch-language__item {
+  transition: $main-transition;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: $main-transition;
+    color: $main-color;
+  }
+}

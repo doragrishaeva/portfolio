@@ -1,0 +1,116 @@
+.portfolio {
+  margin: 0 20px;
+  .section-title {
+    &::before {
+      width: 237px;
+      margin: 0 23px;
+    }
+    &:after {
+      width: 240px;
+      margin: 0 22px;
+    }
+    @include media-laptop {
+      &:before, &:after {
+        width: 150px;
+      }
+    }
+    @include media-tablet {
+      margin: 79px auto 50px;
+      &:before, &:after {
+        width: 87px;
+        margin-top: -1px;
+      }
+    }
+    @include media-bigger-mobile-L {
+      font: bold 28px/40px "Merriweather", serif;
+      &:before, &:after {
+        width: 50px;
+      }
+    }
+    @include media-mobile-M {
+      &:before, &:after {
+        width: 25px;
+      }
+    }
+  }
+
+  .portfolio__filters {
+    margin-bottom: 60px;
+    margin-left: -1px; //for pixel perfect
+    .btn_active {
+      color: $bg-color;
+      &:before {
+        background-color: $main-color;
+      }
+      &:hover {
+        color: $bg-color;
+        &:before {
+          background-color: $main-color;
+        }
+      }
+    }
+    .btn_inactive {
+      border: none;
+      border-left: 2px solid $main-color;
+      &:before {
+        background-color: $main-color;
+      }
+      &:hover {
+        color: $bg-color;
+        border-left: 2px solid $main-color;
+        &:before {
+          background-color: $main-color;
+        }
+      }
+    }
+    @include media-laptop {
+      >.filters__item {
+        width: 170px;
+        &:before {
+          width: 170px;
+        }
+      }
+    }
+    @include media-tablet {
+      >.filters__item {
+        width: 220px;
+        &:before {
+          width: 220px;
+        }
+      }
+      display: flex;
+      max-width: 445px;
+      flex-wrap: wrap;
+      margin: 0 auto 60px;
+    }
+    @include media-big-phone {
+      justify-content: center;
+      >.filters__item {
+        width: 210px;
+        &:before {
+          width: 210px;
+        }
+      }
+    }
+    @include media-bigger-mobile-L {
+      >.filters__item {
+        width: 100%;
+        &:before {
+          width: 100%;
+        }
+        margin: 0 0 5px 0!important;
+      }
+    }
+  }
+
+  .filters__item {
+    @include media-tablet {
+      &:nth-of-type(odd) {
+        margin-right: 5px;
+      }
+      &:nth-of-type(-n+2) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
